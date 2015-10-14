@@ -929,9 +929,10 @@ h6{
     border-radius: 50%;
     text-align: center;
     z-index: 999;
+    margin-top: -45px;
     position: absolute;
-    margin-left: 50px;
-    margin-top: -10px;
+    margin-left: 20px;
+
 }
 
 .hiddenSubMenu {

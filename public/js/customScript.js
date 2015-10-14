@@ -18,8 +18,17 @@ $(document).ready(function(){
         $.cookie('addCartNumber', currentCartNumber);
     });
 
-    $('.showLeftMenu').mouseenter(function(){
-        $('.showLeftMenu').css('cursor', 'pointer');
+    $('.showLeftMenu').hover(function() {
+        var checkClassName = $( ".leftSubMenu" ).hasClass( "hiddenSubMenu" );
+        var displayCssValue = $('.resLeftMenu').css('display');
+        if ( displayCssValue == 'none' || checkClassName == true ) {
+            $('.showLeftMenu').css('cursor', 'pointer');
+        } else {
+            $('.showLeftMenu').css('cursor', 'default');
+        }
+    });
+
+    $('.showLeftMenu').click(function(){
         var displayCssValue = $('.resLeftMenu').css('display');
         if ( displayCssValue == 'none' ) {
             $('.resLeftMenu').removeClass('visible-lg-block');
@@ -28,16 +37,11 @@ $(document).ready(function(){
             $('.resLeftMenu').css('z-index', '999');
 
             $('.leftSubMenu').addClass('hiddenSubMenu');
-        }
-    });
-    $('.resLeftMenu').mouseleave(function(){
-
-        var displayCssValue = $('.resLeftMenu').css('display');
-        if ( displayCssValue == 'block' ) {
-            $('.showLeftMenu').css('cursor', 'default');
+        } else {
             $('.resLeftMenu').addClass('visible-lg-block');
             $('.resLeftMenu').addClass('visible-md-block');
             $('.leftSubMenu').removeClass('hiddenSubMenu');
+
         }
     });
 });
