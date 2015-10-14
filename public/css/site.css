@@ -402,6 +402,9 @@ width: 32px !important;
 .opensans {
 	font-family: 'OpenSans';
 }
+.font10 {
+    font-size: 10pt;
+}
 .raleway {
 	font-family: 'Raleway';
 }
@@ -597,7 +600,7 @@ h1,h2,h3,h4,h5 {
 }
 .brand-selector {
 	max-width: 230px;
-	padding: 4px 10px 4px 20px;
+	padding: 4px 0px 4px 8px;
 	height: 30px;
 	color: #616161;
 }
@@ -911,3 +914,26 @@ h6{
 	}
 }
 
+.paddingLeft0 {
+    padding-left: 0px;
+}
+
+.redCircleBox {
+    display: none;
+    font-size: 11pt;
+    font-weight: bold;
+    background-color: #ff0000;
+    color: #ffffff;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+    z-index: 999;
+    position: absolute;
+    margin-left: 50px;
+    margin-top: -10px;
+}
+
+.hiddenSubMenu {
+    display: none!important;
+}
