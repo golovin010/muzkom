@@ -39,7 +39,7 @@
               <%#= link_to "", add_cart_path(:id=>product.id), :class=>"buy-button right", :method=>"put" do %>
               </div>
               <p class="content-center">
-                <span class="big-icon cart-blue-rectangle"></span>
+                <span class="big-icon cart-blue-rectangle addCartButton"></span>
               </p> 
             <%end%>
           </div>
@@ -56,7 +56,7 @@
                 </div>
               <%end%>
             <div class="row">
-              <div class="col-xs-10 col-xs-offset-1" style="text-align:left">
+              <div class="col-xs-10 col-xs-offset-1 paddingLeft0" style="text-align:left">
                 <%= product.short_description.html_safe %>
               </div>
               <div class="col-xs-4 col-xs-offset-7">
